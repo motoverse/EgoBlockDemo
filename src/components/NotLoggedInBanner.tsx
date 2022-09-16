@@ -1,5 +1,5 @@
 import React from 'react'
-const LOGIN_LINK = `https://egoblock-b17ad.web.app/demo-app/walletAuth?redirectUrl=${window.location.href}`
+const LOGIN_LINK = `https://egoblock-b17ad.web.app/motoverse/walletAuth?redirectUrl=${window.location.href}`
 
 export default function NotLoggedInBanner() {
 
