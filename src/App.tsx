@@ -19,11 +19,23 @@ function App() {
     }
   }, [token])
 
+  const renderContent = () => {
+    if (user) {
+      return <Game user={user} />
+    }
+
+    if (token) {
+      return <p>Loading ...</p>
+    }
+
+    return <NotLoggedInBanner />
+  }
+
   return (
     <div>
       <Header />
       <div className='container'>
-        {user ? <Game user={user} /> : <NotLoggedInBanner />}
+        {renderContent()}
       </div>
     </div>
   );
