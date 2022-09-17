@@ -9,7 +9,7 @@ interface Props {
 export default function Game(props: Props) {
     const user = props.user;
     return (
-        <div>
+        <div className='mt-5'>
             <div className='text-primary'>User: {user.uid}</div>
             <div className='d-flex align-items-center'>
                 <div>NFTs Count:</div>
